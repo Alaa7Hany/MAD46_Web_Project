@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../Scripts/new_contact_script.js"></script>
+    <style>
+        .form-group {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact-page {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div data-role="page" id="contact-page">
+            <div data-role="header">
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-icon-left ui-icon-back">Back</a>
+                <h1>New Contact</h1>
+            </div>
+
+            <div data-role=" main">
+                <form class="contact-page">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" name="phone" id="phone" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender:</label>
+                        <select name="gender" id="gender" data-role="slider">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button id="submitBtn" type="submit" data-inline="true"><i>
+                                &#128190;
+                            </i> Save
+                        </button>
+                        <button type="button" data-inline="true" onclick="window.history.back();">
+                            <i>
+                                &#10060;
+                            </i> Cancel
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div data-role="footer">
+                <h4>Contact List</h4>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
