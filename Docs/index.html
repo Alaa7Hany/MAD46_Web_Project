@@ -1,48 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Contacts App</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
-    />
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-  </head>
-  <body>
-    <div data-role="page" id="list">
-      <div data-role="header">
-        <h1>Contact List</h1>
-        <a href="#add" class="ui-btn ui-btn-right">Add</a>
-      </div>
 
-      <div data-role="content">
-        <input type="search" id="search" placeholder="Filter items..." />
-        <ul data-role="listview" id="contactList"></ul>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <title>Contacts App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+  <div data-role="page" id="list">
+    <div data-role="header">
+      <h1>Contact List</h1>
+      <a href="new_contact.html" class="ui-btn ui-btn-right">Add</a>
     </div>
 
-    <div data-role="page" id="details">
-      <div data-role="header">
-        <a href="#list" data-icon="back">Back</a>
-        <h1 id="detailsName">Name</h1>
-      </div>
-      <!--  Contact Details -->
-      <div data-role="content">
-        <img
-          id="detailsImg"
-          class="avatar"
-          src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?cs=srgb&dl=pexels-italo-melo-881954-2379004.jpg&fm=jpg"
-          alt="avatar"
-        />
-        <p id="detailsPhone">Phone</p>
-        <p id="detailsEmail">Email</p>
-        <a href="new_contact.html">Edit</a>
-        <a href="delete_contact.html">Delete</a>
-      </div>
+    <div data-role="content">
+      <input type="search" id="search" placeholder="Filter items..." />
+      <ul data-role="listview" id="contactList"></ul>
     </div>
-    <script src="../Scripts/scripts.js"></script>
-  </body>
+  </div>
+
+  <div data-role="page" id="details">
+    <div data-role="header">
+      <a href="#list" data-icon="back">Back</a>
+      <h1 id="detailsName">Name</h1>
+    </div>
+    <!--  Contact Details -->
+    <div data-role="content">
+      <img id="detailsImg" class="avatar"
+        src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?cs=srgb&dl=pexels-italo-melo-881954-2379004.jpg&fm=jpg"
+        alt="avatar" />
+      <p id="detailsPhone">Phone</p>
+      <p id="detailsEmail">Email</p>
+      <a href="new_contact.html">Edit</a>
+      <a href="delete_contact.html">Delete</a>
+    </div>
+  </div>
+  <script src="../Scripts/scripts.js"></script>
+</body>
+
 </html>
